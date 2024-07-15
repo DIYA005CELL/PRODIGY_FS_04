@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Chat Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="login-container" id="loginContainer">
+            <h2>Login</h2>
+            <input type="text" id="username" placeholder="Enter username" required>
+            <button onclick="login()">Login</button>
+        </div>
+        
+        <div class="chat-container" id="chatContainer" style="display: none;">
+            <h2>Chat Room</h2>
+            <div class="chat-box" id="chatBox"></div>
+            <input type="text" id="messageInput" placeholder="Enter message" onkeypress="sendMessage(event)">
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
